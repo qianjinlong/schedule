@@ -18,9 +18,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ScheduledTaskService {
 
-    private CronTaskRegistrar cronTaskRegistrar;
+    private final CronTaskRegistrar cronTaskRegistrar;
 
-    private SysJobRepository sysJobRepository;
+    private final SysJobRepository sysJobRepository;
 
     @Autowired
     public ScheduledTaskService(CronTaskRegistrar cronTaskRegistrar, SysJobRepository sysJobRepository) {

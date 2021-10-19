@@ -25,7 +25,7 @@ public class CronTaskRegistrar implements DisposableBean {
     private final Map<Runnable, ScheduledTask> scheduledTasks = new ConcurrentHashMap<>(16);
 
     /** 任务调度器接口 interface org.springframework.scheduling.TaskScheduler */
-    private TaskScheduler taskScheduler;
+    private final TaskScheduler taskScheduler;
 
     @Autowired
     public CronTaskRegistrar(TaskScheduler taskScheduler) {

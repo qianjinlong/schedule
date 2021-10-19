@@ -26,9 +26,9 @@ public class SysJobRunner implements CommandLineRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(SysJobRunner.class);
 
-    private SysJobRepository sysJobRepository;
+    private final SysJobRepository sysJobRepository;
 
-    private CronTaskRegistrar cronTaskRegistrar;
+    private final CronTaskRegistrar cronTaskRegistrar;
 
     @Autowired
     public SysJobRunner(SysJobRepository sysJobRepository, CronTaskRegistrar cronTaskRegistrar) {

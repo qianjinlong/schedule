@@ -21,13 +21,13 @@ public class SchedulingRunnable implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(SchedulingRunnable.class);
 
     /** 类名 */
-    private String beanName;
+    private final String beanName;
 
     /** 方法名 */
-    private String methodName;
+    private final String methodName;
 
     /** 参数 */
-    private String params;
+    private final String params;
 
     public SchedulingRunnable(String beanName, String methodName) {
         this(beanName, methodName, null);
